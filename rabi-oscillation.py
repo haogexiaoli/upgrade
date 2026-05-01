@@ -20,6 +20,8 @@ class Qubit:
     def plot_evolution(self):
             plt.plot(self.time_axis, self.state_1_prob, label="STATE 1")
             plt.plot(self.time_axis, self.state_0_prob, label="STATE 0")
+            plt.xlabel("Time (us)")
+            plt.ylabel("Probability")
             plt.legend()
             plt.show()
 #主程序运行，可改参数

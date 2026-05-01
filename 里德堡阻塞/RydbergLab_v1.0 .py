@@ -74,6 +74,8 @@ class RydbergSimulator:
         plt.plot(self.times, self.prob_00, label="State |00>")
         plt.plot(self.times, self.prob_W, label="State |01> + |10>")
         plt.plot(self.times, self.prob_11, label="State |11>")
+        plt.xlabel("Time (us)")
+        plt.ylabel("Probability")
         plt.title(title)
         plt.legend()
         plt.show()
